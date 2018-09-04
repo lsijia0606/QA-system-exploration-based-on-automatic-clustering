@@ -1,10 +1,10 @@
-# Answers-generation-for-QA-system
+# QA-system-exploration-based-on-automatic-clustering
 This method proposes a new clustering algorithm that can detect the clustering centers and sizes automatically via density based metrics.
 ## System Overview
 The clustering algorithm RLClu is proposed based on the assumption of “Cluster centers usually have a higher local density and a relative larger distance from objects with higher local densities”. It consists of three steps: metric extraction, clustering center identification, and object clustering.
 
 •	Step 1. For each answer under a typical question, a parser is used to decompose it into keywords sequence. We only focus on the keywords that contain at least one Chinese word and its length should be bigger than 1. For example, “可以免费安装呀” will be decomposed to “可以//免费//安装//呀‘’, and ‘’呀’’ will be discarded;  
-•	Step 2. Feed the keywords into the embedding lookup to generate the vector for each word;  
+•	Step 2. Feed the keywords into the word embedding lookup to generate the vector for each word;  
 •	Step 3. Calculate the similarity distance metric using SNN or cosine similarity and identify the nearest neighbor for each object;  
 •	Step 4. Evaluate the centrality of objects based on K-density metric and minimum density-based distance;  
 •	Step 5. Identify clustering centers and the number of clusters k by outward statistical testing. First, by sorting the product of the k-density and minimum density-based distance for each object in descending order, STClu generates a set of ordered statistics  . Then, find an obvious gap between this ordered statistics   from the largest end and choose top k nodes as cluster centers. Finally, the number of clustering centers is set as k and the objects corresponding to the first k objects are detected as the clustering centers;  
