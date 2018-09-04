@@ -1,5 +1,5 @@
 # Answers-generation-for-QA-system
-A method delivers a collection of candidate answers in response to a query against a collection of unstructured data.
+This method proposes a new clustering algorithm that can detect the clustering centers and sizes automatically via density based metrics.
 ## System Overview
 The clustering algorithm RLClu is proposed based on the assumption of “Cluster centers usually have a higher local density and a relative larger distance from objects with higher local densities”. It consists of three steps: metric extraction, clustering center identification, and object clustering.
 
