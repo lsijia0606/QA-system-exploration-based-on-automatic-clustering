@@ -1,5 +1,6 @@
 # QA-system-exploration-based-on-automatic-clustering
 This method proposes a new clustering algorithm that can detect the clustering centers and sizes automatically via density based metrics.
+
 ## System Overview
 The clustering algorithm RLClu is proposed based on the assumption of “Cluster centers usually have a higher local density and a relative larger distance from objects with higher local densities”. It consists of three steps: metric extraction, clustering center identification, and object clustering.
 
@@ -42,3 +43,4 @@ cluster_top,cluster_all,valid_center,top_ = tfidf(path1,path2,50, 10, 20, 0,100)
 &emsp;2.  cluster_all: cluster result for whole values in each cluster  
 &emsp;3.  valid_center: valid center list after POS tag  
 &emsp;4.  top_: top m similar sentence for each question  
+
