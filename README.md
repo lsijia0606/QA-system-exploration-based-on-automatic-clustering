@@ -43,3 +43,4 @@ cluster_top,cluster_all,valid_center,top_ = tfidf(path1,path2,50, 10, 20, 0,100)
 &emsp;2.  cluster_all: cluster result for whole values in each cluster  
 &emsp;3.  valid_center: valid center list after POS tag  
 &emsp;4.  top_: top m similar sentence for each question  
+
